@@ -1377,7 +1377,6 @@ exports.encode = function(lat, lng, country) {
 		args = Array.prototype.slice.apply(arguments, [3]);
 	}
 	args.unshift(lat, lng, ("string" === typeof country) ? iso2ccode(country) : country);
-	console.log("ARGS",args);
 	return master_encode.apply(this, args);
 }
 
